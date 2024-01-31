@@ -1,0 +1,81 @@
+
+<div class="main">
+    <div class="container">
+
+        <div class="left-box">
+            <div class="shape">
+
+                <h3>Left Box </h3>
+
+            </div>
+            <div class="login-option">
+                <!-- <p>This is the left box content.</p> -->
+                <p>Already have an account? <a href="">Log_in</a> </p>
+
+                <div class="icons">
+                    <a href="https://www.instagram.com" target="_blank"><i class="fa fa-instagram"
+                            style="font-size: 32px;"></i></a>
+                    <a href="https://www.twitter.com" target="_blank"><i class="fa fa-twitter"
+                            style="font-size: 32px;"></i></a>
+                    <a href="https://www.google.com/" target="_blank"><i class="fa fa-google"
+                            style="font-size: 32px;"></i></a>
+
+                </div>
+            </div>
+        </div>
+
+        <div class="right-box">
+            <div class="btn">
+                <button class="google-signup" (click)="signUp($event)">
+
+                    <a href="/auth/google" class="btn grey darken-1">
+
+                        <i class="fa fa-google left"></i> <span> Sign up With Google </span>
+
+                    </a>
+
+                </button>
+
+            </div>
+
+            <h2><span>or</span></h2>
+
+
+            <div class="line"></div>
+
+
+
+            <form (ngSubmit)="onSubmit()">
+
+                <div class="name">
+                    
+
+
+
+                  
+                    
+
+
+                    <div class="input-bx">
+                        <input class="phonenumber " type="tel" id="phonenumber" [(ngModel)]="phonenumber" name="phonenumber"
+                        pattern="[0-9]{3}-[0-9]{2}-[0-9]{3}" required>
+                        <span>phonenumber:</span>
+                    </div>
+
+                </div>
+                <div class="privacy">
+                    <input type="checkbox" name="checkbox" id="checkbox" checked>
+                    <span>I agree to the <a href="#"> Terms Of Service</a> and <a href="#">Privacy Notice.</a></span>
+                </div>
+
+
+
+                <button class="SendOTP" type="submit">Send OTP !</button>
+
+            </form>
+
+        </div>
+
+    </div>
+
+</div>

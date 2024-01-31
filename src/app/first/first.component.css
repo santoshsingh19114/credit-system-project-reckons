@@ -1,0 +1,626 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.navbar {
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    background-color: rgb(239, 243, 243);
+    color: white;
+    padding: 10px 0 10px 0;
+    box-shadow: #ccc;
+    /* position: fixed; */
+}
+
+.left{
+    width: 50px;
+    height: 50px;
+    color: #000000;
+}
+
+
+.middle ul {
+    display: flex;
+
+}
+
+.middle ul li{
+    margin: 15px;
+    list-style: none;
+}
+
+.middle ul li a{
+    text-decoration: none;
+    color: black;
+}
+
+
+.right button{
+    padding: 10px 30px;
+    border-radius: 10px;
+    background-image: linear-gradient(45deg,#3023AE 0%,#FF0099 100%);
+    font-size: large;
+    cursor: pointer;
+}
+
+.right button:hover{
+    background-image: linear-gradient(45deg,#FF0099 0%,#3023AE 100%);
+}
+
+.container{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+
+}
+
+
+.bgimage{
+    width: 100%;
+    height:80vh;
+
+    background-image: url("../../assets/images/1.png" ) ;
+    background-size: auto;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+
+
+    
+   
+
+}
+
+
+.bgimage div{
+    width: 50%;
+    height: 100%;
+    display: flex ;
+    flex-direction: column;
+    justify-content: center;
+    align-items: left;
+    padding: 50px;
+
+}
+
+
+.bgimage div button{
+    margin-top: 20px;
+    width: 100px;
+    height: 30px;
+    border-radius: 5px;
+    background-color: rgb(68, 68, 234);
+    color: white;
+    cursor: pointer;
+}
+
+.bgimage div button:hover{
+    background-color: rgb(12, 12, 74);
+}
+
+
+
+.services  {
+    margin-top: 20px;
+    text-align: center;
+}
+
+.box{
+    width: 100%;
+    height: 100%;
+    padding: 50px;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+
+.servicebox{
+    background-color: #F9F9F9;
+    text-align: left    ;
+    width: 40rem;
+    height: 15rem;
+    border: 1px solid black;
+    margin: 20px;
+    padding: 2rem;
+    text-align: center;
+    
+
+}
+
+
+
+.steps{
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    width: 100%;
+    height: 80vh;
+}
+.mark{
+    height: 5px;
+    background-color: rgb(201, 13, 201);
+    width: 15%;
+    margin-left: 40rem;
+}
+.line{
+    position: absolute;
+    width: 100%;
+    height: 1px;
+    top: 250px;
+    background-color: black;
+}
+
+.step{
+    width: 100%;
+    display: flex;
+    position: relative;
+    margin-top: 10px;
+
+}
+.step1,.step2,.step3,.step4{
+    width: 300px;
+    height: 200px;
+    border: 1px solid black;
+    border-radius: 20px;
+    padding: 20px;
+    margin: auto;
+}
+
+
+.step2,.step4{
+    position: relative;
+    top: 300px;
+}
+
+
+
+
+
+
+
+.companies{
+    text-align: center;
+    margin: 50px 0 50px 0;
+}
+
+.img{
+    display: flex;
+    /* flex-wrap: wrap; */
+    overflow: auto;
+    
+}
+
+.img img{
+    width: 280px;
+    margin: 10px;
+}
+
+.testimonial{
+    /* height: 80vh; */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    /* text-align: center; */
+
+}
+
+.card{
+    width: 100%;
+    display: flex;
+/* flex-wrap: wrap; */
+padding: 20px;
+justify-content: center;
+align-items: center;
+overflow: auto;
+
+
+}
+
+
+
+/* testimonial-slider.component.css */
+.testimonial-container {
+    overflow: hidden;
+    color: #000000;
+    width: 300px; /* Adjust the width based on your design */
+    height: 200px; /* Adjust the height based on your design */
+  }
+  
+  .testimonial {
+    opacity: 1;
+    color: #000000;
+    transition: opacity 0.5s ease-in-out;
+  }
+  
+  .testimonial.active {
+    opacity: 0;
+    color: #000000;
+  }
+  
+
+
+.review{
+    display: block;
+    width: 600px;
+    height: 500px;
+    border: 1px solid black;
+}
+
+
+
+.faq{
+    margin-top: 20px;
+}
+
+
+
+
+
+.faq-heading{
+    border-bottom: #777;
+    /* padding: 20px 60px; */
+    text-align: center;
+}
+.faq-container{
+display: flex;
+justify-content: center;
+flex-direction: column;
+
+}
+.hr-line{
+  width: 80%;
+  margin: auto;
+  
+}
+/* Style the buttons that are used to open and close the faq-page body */
+.faq-page {
+    /* background-color: #eee; */
+    color: #444;
+    cursor: pointer;
+    font-size: larger;
+    font-weight: 800;
+    padding: 30px 20px;
+    width: 80%;
+    border-bottom:1px solid #444;
+    outline: none;
+    transition: 0.4s;
+    margin: auto;
+
+}
+
+
+.panel{
+    color: #444;
+    font-size: large;
+    font-weight: 500;
+   
+}
+.faq-body{
+    margin: auto;
+    /* text-align: center; */
+   width: 50%; 
+   padding: auto;
+   
+}
+
+
+/* Add a background color to the button if it is clicked on (add the .active class with JS), and when you move the mouse over it (hover) */
+.active,
+.faq-page:hover {
+    background-color: #F9F9F9;
+}
+
+/* Style the faq-page panel. Note: hidden by default */
+.faq-body {
+    padding: 0 18px;
+    background-color: white;
+    display: none;
+    overflow: hidden;
+}
+
+.faq-page:after {
+    content: '\02795';
+    /* Unicode character for "plus" sign (+) */
+    font-size: 13px;
+    color: #777;
+    float: right;
+    margin-left: 5px;
+}
+
+.active:after {
+    content: "\2796";
+    /* Unicode character for "minus" sign (-) */
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.main{
+    width: 100%;
+    height: auto;
+    /* padding: 20px; */
+}
+
+
+
+
+
+
+
+
+
+
+
+
+footer{
+    width: 100%;
+    /* display: flex; */
+    padding: 2rem 6rem;
+    background: rgb(89,29,229);
+background: linear-gradient(93deg, rgba(89,29,229,0.7876400560224089) 0%, rgba(100,51,135,1) 0%, rgba(102,89,255,1) 100%);
+color: white;
+
+}
+
+.upper{
+    display: flex;
+}
+.upper div{
+    
+    width: 20rem;
+    text-align: center;
+    height: 20vh;
+    display: block;
+}
+
+
+.lower{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+
+.two{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+
+}
+
+.two a{
+    padding: 10px;
+    margin: 10px;
+}
+
+
+.three{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    cursor: pointer;
+}
+
+.three i{
+    margin: 3px;
+}
+
+
+
+
+
+
+
+
+.newsletter{
+    background-color: white;
+    border-radius: 25px;
+    padding: 10px;
+    margin-bottom: 5px;
+    color: black;
+}
+
+.newsletter label{
+    display: block;
+    margin-bottom: 10px;
+}
+
+.newsletter input{
+    height: 40px;
+    border-radius: 10px;
+    background: rgb(89,29,229);
+    background: linear-gradient(93deg, rgba(89,29,229,0.7876400560224089) 0%, rgba(100,51,135,1) 0%, rgba(102,89,255,1) 100%);
+    color: white;
+    text-align: center;
+}
+.newsletter input::placeholder{
+    color: white;
+}
+
+.newsletter p{
+    margin-top: 10px;
+}
+
+.newsletter input span i {
+    color: black;
+}
+
+
+
+.newsletter span button{
+    padding: 2PX;
+    width: 35PX;
+    height: 35PX;
+    cursor: pointer;
+    
+
+}
+
+
+
+
+
+a{
+    color: white;
+    text-decoration: none;
+}
+
+a:hover{
+    text-decoration: underline;
+}
+
+
+
+
+@media only screen and (max-width: 700px){
+    
+
+    footer{
+        padding: 1rem;
+    }
+
+    .two a{
+        padding: 5px;
+        margin: 5px;
+    }
+
+
+    .bgimage div{
+        display:inline-block;
+        width: 100%;
+        height: 20vh;
+        padding: 0;
+        
+    }
+
+    
+}
+
+
+@media only screen and (max-width: 545px){
+    .navbar{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+
+
+    .middle ul {
+        flex-direction: column;
+    
+    }
+
+    .middle ul li{
+        padding: 0;
+        margin: 5px;
+    }
+
+    footer{
+        flex-wrap: wrap;
+    }
+
+    
+
+
+    .upper{
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+    }
+
+
+    .lower{
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+    }
+}
+
+
+
+@media only screen and (max-width: 1456px){
+
+
+    .bgimage{
+        height: 40vh;
+    }
+
+    .box{
+        justify-content: center;
+        
+    }
+
+    .servicebox{
+        width: 80%;
+    }
+
+    .mark{
+        display: none;
+       
+    }
+
+    
+
+
+    .services{
+        justify-content: center;
+        align-items: center;
+    }
+
+    .img img{
+        width: 100%;
+    }
+    
+}
+
+
+@media only screen and (max-width:1000px) {
+    .steps{
+        height: auto;
+    }
+    .step{
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        
+    }
+    .step2,.step4{
+        display: block;
+        top: 0;
+    }
+    .line{
+        display: none;
+    }
+    .step1,.step2,.step3,.step4{
+        margin: 10px 0 10px 0;
+        width: 60%;
+    }
+
+    .bgimage div h1{
+        display: inline-block;
+        font-size: medium;
+
+    }
+
+
+    
+}
